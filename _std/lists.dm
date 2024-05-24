@@ -198,7 +198,8 @@
  * C would have a 10% chance of being picked,
  * and D would have a 0% chance of being picked.
  *
- * You should only pass integers in.
+ * Supports both integer and float weights,
+ * although null weights will throw a runtime.
  */
 proc/weighted_pick(list/L)
 	var/total = 0
